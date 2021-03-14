@@ -134,13 +134,24 @@
     }
 
     /* Nav-bar */
-
+    .nav-grid {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
     .main-nav {
-        display: block;
+        display: flex;
+        max-width: 100%;
+        align-items: center;
     }
 
     .main-nav-toggle {
         display: none;
+    }
+    .main-nav__link {
+        display: inline-block;
+    }
+    .main-nav__link:last-child {
+        padding-bottom: 0;
     }
 
     /* Projects Gallery */
@@ -243,7 +254,6 @@
     .team__members {
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
     }
     .member__card {
         width: 90%;
@@ -254,12 +264,15 @@
 
     .main-grid {
         display: grid;
-        grid-template-columns: 4fr 1fr;
+        grid-template-columns: 1fr 250px;
         grid-template-areas:
             "aboutus team"
             "projects team"
             "services services"
             "contactus contactus";
+        max-width: 1100px;
+        width: 90%;
+        margin: 0 auto;
     }
     .about-us {
         grid-area: aboutus;
