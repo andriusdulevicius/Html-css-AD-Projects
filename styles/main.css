@@ -1,0 +1,117 @@
+:root {
+    --main-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --dark-text-color: rgba(54, 53, 53, 0.945);
+    --medium-text-color: rgba(138, 135, 135, 0.863);
+    --light-text-color: rgb(230, 230, 230);
+
+    --white-bgc-color: white;
+    --light-bgc-color: rgb(230, 230, 230);
+    --main-bgc-color: rgba(126, 125, 125, 0.863);
+    --dark-bgc-color: rgba(66, 65, 65, 0.959);
+
+    --link-hover-color: rgba(29, 82, 77, 0.849);
+    --icon-font-weight: 1.5rem;
+    --large-bd-radius: 20px;
+    --small-bd-radius: 6px;
+
+    --btn-light-color: white;
+    --btn-dark-color: rgba(126, 125, 125, 0.863);
+}
+/* Header nav bar */
+.header {
+    padding: 1em 0;
+    background-color: var(--dark-bgc-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.header .main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-logo {
+    text-decoration: none;
+    font-style: italic;
+}
+.fa-rust {
+    font-size: 0.6rem;
+}
+
+.main-nav {
+    display: none;
+}
+
+.main-nav-toggle {
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--light-text-color);
+}
+.main-nav.active {
+    display: block;
+}
+
+.main-nav__link {
+    text-decoration: none;
+    padding-right: 1rem;
+    color: var(--light-text-color);
+}
+.main-logo {
+    font-size: 2rem;
+    color: var(--light-text-color);
+}
+
+/* Hero area */
+
+.hero {
+    background-image: url("../Photos/hero-img/hero.jpg");
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.hero .main-container {
+    width: 300px;
+    min-height: 400px;
+    text-align: center;
+    padding-top: 40%;
+}
+
+.hero__title {
+    font-size: 2rem;
+    margin-bottom: 0.3em;
+    color: var(--light-text-color);
+}
+
+.hero__subtitle {
+    color: var(--light-text-color);
+    font-size: 0.8rem;
+}
+
+.section__title {
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: var(--dark-text-color);
+}
+
+.section__subtitle {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: normal;
+    color: var(--medium-text-color);
+}
+
+.section__paragraph {
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.box-shadow {
+    box-shadow: 3px 3px 6px var(--main-bgc-color);
+}

@@ -1,0 +1,49 @@
+/* Services */
+.service-article {
+    background-color: var(--dark-bgc-color);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: var(--small-bd-radius);
+}
+
+.service-article__text {
+    padding-bottom: 1.5rem;
+}
+
+.service__title {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--light-text-color);
+}
+
+.service__description {
+    margin: 0;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    color: var(--light-text-color);
+}
+
+.btn__read-more {
+    background-color: var(--btn-light-color);
+    border: none;
+    padding: 0.5rem;
+    width: 150px;
+    border-radius: var(--large-bd-radius);
+    margin: 1.5rem 0;
+}
+
+.btn__read-more:hover {
+    cursor: pointer;
+    color: var(--light-text-color);
+    background-color: var(--btn-dark-color);
+}
+
+.btn__read-more:focus {
+    outline: none;
+}
+
+.service-article__img {
+    border-radius: var(--small-bd-radius);
+}

@@ -1,0 +1,33 @@
+.section__card {
+    background-color: var(--white-bgc-color);
+    color: var(--dark-text-color);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: var(--small-bd-radius);
+}
+
+.section__paragraph {
+    line-height: 1.6rem;
+}
+.card__list {
+    padding: 0;
+}
+.card__list-item {
+    list-style: none;
+    line-height: 1.6rem;
+}
+.card__list-item i {
+    padding-right: 1rem;
+}
+
+.card__title {
+    color: var(--dark-text-color);
+    font-size: 1.2rem;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.about__img {
+    max-height: 350px;
+    width: 100%;
+}

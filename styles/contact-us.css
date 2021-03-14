@@ -1,0 +1,80 @@
+.contacts__box-title {
+    font-size: 0.9rem;
+    color: var(--yellow-color);
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.contacts__box-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: var(--text-color);
+}
+
+.contacts__links {
+    padding: 2rem 0;
+}
+
+.contacts__links i {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
+
+.contacts__form {
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.form-element1,
+.form-element2,
+.form-element3,
+.form-element__textarea {
+    padding-top: 1rem;
+}
+
+.contacts__form label {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    width: 100%;
+}
+
+.contacts__form input,
+.contacts__form textarea {
+    border: 1px solid var(--text-color);
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    color: var(--text-color);
+    width: 100%;
+}
+.contacts__form input:focus,
+.contacts__form textarea:focus {
+    outline: none;
+}
+
+.contacts__form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.send-btn {
+    margin: 2rem 0;
+    padding: 0.5rem;
+    width: 115px;
+    background-color: var(--yellow-color);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.send-btn:active {
+    outline: none;
+    transform: scale(1.1);
+}
+
+.send-btn:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+/* Team members */
+
+.member__card {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.member__img {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    min-height: 125px;
+    min-width: 125px;
+}
+
+.member__name {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: var(--dark-text-color);
+}
+
+.job__title {
+    color: var(--medium-text-color);
+    font-weight: bold;
+}
+
+.main__skills {
+    display: block;
+    color: var(--medium-text-color);
+    margin: 1rem 0;
+}
+
+.connections i {
+    font-size: 1.3rem;
+    padding-right: 0.3rem;
+    color: var(--dark-text-color);
+}
