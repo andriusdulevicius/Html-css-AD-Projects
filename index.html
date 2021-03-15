@@ -442,65 +442,73 @@
                         </div>
                     </div>
                 </aside>
-                <section class="contact-us">
-                    <h2 class="section__title">Contact us</h2>
-                    <div class="contacts-container">
-                        <div class="contacts__box">
-                            <div class="contacts__box-title">
-                                <h5>Address</h5>
-                            </div>
+                <section class="contact-us" id="contact-us">
+                    <div class="main-container">
+                        <h2 class="section__title">Contact us</h2>
+                        <div class="contacts-container">
+                            <div class="contacts__box">
+                                <div class="contacts__box-title">
+                                    <h4>Address</h4>
+                                </div>
 
-                            <div class="subtitle__box">
-                                <span class="contacts__box-subtitle"
-                                    >Street 211B Baker Street,
-                                </span>
-                                <br />
-                                <span class="contacts__box-subtitle"
-                                    >London, UK</span
-                                >
+                                <div class="subtitle__box">
+                                    <span class="contacts__box-subtitle"
+                                        >Tilzes st. 100,
+                                    </span>
+                                    <br />
+                                    <span class="contacts__box-subtitle"
+                                        >Siauliai, LT</span
+                                    >
+                                </div>
                             </div>
-                        </div>
-                        <div class="contacts__box">
-                            <div class="contacts__box-title">
-                                <h5>Customer Support</h5>
-                            </div>
+                            <div class="contacts__box">
+                                <div class="contacts__box-title">
+                                    <h4>Customer Support</h4>
+                                </div>
 
-                            <div class="subtitle__box">
-                                <span class="contacts__box-subtitle"
-                                    >E-mail:contact@site.com
-                                </span>
-                                <br />
-                                <span class="contacts__box-subtitle"
-                                    >Phone:(555)555-5555</span
-                                >
+                                <div class="subtitle__box">
+                                    <span class="contacts__box-subtitle"
+                                        >E-mail:ADprojects@gmail.com
+                                    </span>
+                                    <br />
+                                    <span class="contacts__box-subtitle"
+                                        >Phone:+3706 000000</span
+                                    >
+                                </div>
                             </div>
+                            <div class="contacts__links">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"
+                                    ><i class="fab fa-instagram-square"></i
+                                ></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <form action="submit" class="contacts__form">
+                                <div class="form-element1">
+                                    <label for="name"
+                                        >Your Name (required)</label
+                                    >
+                                    <input type="name" id="name" />
+                                </div>
+                                <div class="form-element2">
+                                    <label for="email"
+                                        >Your Email (required)</label
+                                    >
+                                    <input type="email" id="email" />
+                                </div>
+                                <div class="form-element3">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" />
+                                </div>
+                                <div class="form-element__textarea">
+                                    <label for="msg">Your Message</label>
+                                    <textarea name="msg" id="msg"></textarea>
+                                </div>
+                                <button class="send-btn" type="submit">
+                                    Send
+                                </button>
+                            </form>
                         </div>
-                        <div class="contacts__links">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"
-                                ><i class="fab fa-instagram-square"></i
-                            ></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                        <form action="submit" class="contacts__form">
-                            <div class="form-element1">
-                                <label for="email">Your Name (required)</label>
-                                <input type="email" id="email" />
-                            </div>
-                            <div class="form-element2">
-                                <label for="email">Your Email (required)</label>
-                                <input type="email" id="email" />
-                            </div>
-                            <div class="form-element3">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" />
-                            </div>
-                            <div class="form-element__textarea">
-                                <label for="msg">Your Message</label>
-                                <textarea name="msg" id="msg"></textarea>
-                            </div>
-                            <button class="send-btn" type="submit">Send</button>
-                        </form>
                     </div>
                 </section>
             </div>
@@ -508,12 +516,12 @@
 
         <script>
             document
-                .getElementById("main-nav-toggle")
-                .addEventListener("click", toggleNav);
-            const mainNav = document.getElementById("main-nav");
+                .getElementById('main-nav-toggle')
+                .addEventListener('click', toggleNav);
+            const mainNav = document.getElementById('main-nav');
 
             function toggleNav() {
-                mainNav.classList.toggle("active");
+                mainNav.classList.toggle('active');
             }
         </script>
     </body>
