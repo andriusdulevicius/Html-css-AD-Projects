@@ -275,7 +275,9 @@
         max-width: 100%;
         align-items: center;
     }
-
+    .main-nav.active {
+        display: flex;
+    }
     .main-nav-toggle {
         display: none;
     }
@@ -286,7 +288,7 @@
         color: var(--medium-text-color);
     }
     .main-nav__link:last-child {
-        padding-bottom: 0;
+        padding-bottom: 0.2rem;
     }
 
     /* Projects Gallery */
@@ -328,6 +330,7 @@
 
     .team__members {
         flex-wrap: nowrap;
+        column-gap: 1rem;
     }
     /* Contact Us */
 
