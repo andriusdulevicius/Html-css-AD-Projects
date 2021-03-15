@@ -26,17 +26,52 @@
         padding-left: 0.5rem;
         width: 50%;
     }
+
+    /* Footer */
+
+    .footer .main-container {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 2fr 2fr;
+        row-gap: 2rem;
+        column-gap: 2rem;
+        grid-template-areas:
+            'quick-links follow-us'
+            'subscribe subscribe'
+            'copyrights copyrights';
+    }
+
+    .footer-links {
+        grid-area: quick-links;
+    }
+    .footer-follow-us {
+        grid-area: follow-us;
+    }
+    .footer-about-us {
+        grid-area: about-us;
+    }
+    .footer-subscribe {
+        grid-area: subscribe;
+    }
+
+    .copyrights {
+        grid-area: copyrights;
+    }
+    .icons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 
 @media screen and (min-width: 570px) {
     /* Hero area */
 
-    .hero .main-container {
-        width: 100%;
+    .hero__container {
         padding-top: 230px;
-        text-align-last: left;
-        padding-left: 5rem;
+        text-align: center;
     }
+
     .hero__title {
         font-size: 2.4rem;
     }
@@ -106,7 +141,7 @@
     .contacts__links {
         display: flex;
         flex-direction: column;
-        align-items: end;
+        justify-self: self-end;
     }
     .contacts__links a {
         padding-bottom: 0.5rem;
@@ -118,6 +153,7 @@
 
 @media screen and (min-width: 768px) {
     /* Hero area */
+
     .hero__title {
         font-size: 2.7rem;
     }
@@ -156,14 +192,15 @@
 
     .team__members {
         display: flex;
-        gap: 1rem;
+        justify-content: space-between;
+        row-gap: 1rem;
         flex-wrap: wrap;
     }
 
     .member__card {
         background-color: var(--white-bgc-color);
         border-radius: var(--large-bd-radius);
-        width: 42%;
+        width: 45%;
         flex-direction: column;
         text-align: center;
         padding: 1rem;
@@ -201,6 +238,21 @@
         grid-column: 3 / 4;
         justify-self: end;
     }
+
+    /* Footer */
+
+    .footer .main-container {
+        grid-template-columns: 1fr 2fr;
+        row-gap: 1rem;
+        column-gap: 2rem;
+        grid-template-areas:
+            'quick-links subscribe'
+            'quick-links follow-us'
+            'copyrights copyrights';
+    }
+    .icons {
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 991px) {
@@ -229,6 +281,9 @@
     }
     .main-nav__link {
         display: inline-block;
+    }
+    .main-nav__link:hover {
+        color: var(--medium-text-color);
     }
     .main-nav__link:last-child {
         padding-bottom: 0;
@@ -274,9 +329,37 @@
     .team__members {
         flex-wrap: nowrap;
     }
+    /* Contact Us */
+
+    .contacts__links {
+        flex-direction: row;
+        align-items: end;
+    }
+    .contacts__links a {
+        padding-bottom: 0;
+        padding-right: 1rem;
+    }
+
+    .contacts__links i:hover {
+        color: var(--dark-text-color);
+    }
+
+    /* Footer */
+
+    .footer .main-container {
+        grid-template-columns: 1.4fr 4fr 2fr;
+        grid-template-areas:
+            'quick-links subscribe follow-us'
+            'copyrights  copyrights copyrights';
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    /* Globals */
+    .main-container {
+        margin: 0 10% 0 0;
+    }
+
     /* Projects Gallery */
 
     .projects__photos {
@@ -335,21 +418,47 @@
         flex-direction: column;
         align-items: center;
     }
+    .team .main-container {
+        margin: 0 auto;
+    }
     .member__card {
-        width: 90%;
         box-shadow: none;
+        width: 90%;
+    }
+
+    /* Services */
+
+    #services > .main-container {
+        width: 100%;
+    }
+
+    /* Contact Us */
+
+    #contacts > .main-container {
+        width: 100%;
+    }
+
+    /* Footer */
+
+    #footer > .main-container {
+        margin: 0 auto;
+    }
+
+    .footer-follow-us {
+        justify-self: right;
     }
 
     /* Main-grid */
 
     .main-grid {
         display: grid;
-        grid-template-columns: 1fr 250px;
+        grid-template-columns: 1fr 260px;
         grid-template-areas:
             'aboutus team'
             'projects team'
             'services services'
-            'contactus contactus';
+            'contacts contacts'
+            'footer footer';
         max-width: 1100px;
         width: 90%;
         margin: 0 auto;
@@ -366,7 +475,11 @@
     .team {
         grid-area: team;
     }
-    .contact-us {
-        grid-area: contactus;
+    .contacts {
+        grid-area: contacts;
+    }
+
+    .footer {
+        grid-area: footer;
     }
 }

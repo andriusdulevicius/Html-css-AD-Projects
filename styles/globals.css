@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://demo.colorlib.com/travelify/wp-content/themes/travelify/images/background.png");
+    background-image: url('https://demo.colorlib.com/travelify/wp-content/themes/travelify/images/background.png');
     font-family: var(--main-font-family);
 }
 .main-container {
@@ -17,17 +17,20 @@ img {
 
 :root {
     --main-font-family: Verdana, Geneva, Tahoma, sans-serif;
-    --dark-text-color: rgba(66, 65, 65, 0.863);
-    --medium-text-color: rgba(126, 125, 125, 0.863);
+    --dark-text-color: rgba(54, 53, 53, 0.945);
+    --medium-text-color: rgba(138, 135, 135, 0.863);
     --light-text-color: rgb(230, 230, 230);
 
-    --light-bgc-color: rgb(255, 245, 245);
-    --main-bgc-color: rgb(34, 202, 194);
-    --dark-bgc-color: rgba(66, 65, 65, 0.863);
+    --white-bgc-color: white;
+    --light-bgc-color: rgb(230, 230, 230);
+    --main-bgc-color: rgba(126, 125, 125, 0.863);
+    --dark-bgc-color: rgba(66, 65, 65, 0.959);
 
     --link-hover-color: rgba(29, 82, 77, 0.849);
     --icon-font-weight: 1.5rem;
-    --bd-radius: 20px;
+    --large-bd-radius: 20px;
+    --small-bd-radius: 6px;
+
     --btn-light-color: white;
     --btn-dark-color: rgba(126, 125, 125, 0.863);
 }

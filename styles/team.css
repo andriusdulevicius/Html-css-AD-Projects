@@ -37,3 +37,7 @@
     padding-right: 0.3rem;
     color: var(--dark-text-color);
 }
+
+.connections i:hover {
+    color: var(--medium-text-color);
+}
